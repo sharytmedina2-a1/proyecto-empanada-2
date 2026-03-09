@@ -1,6 +1,6 @@
 const datos = [
     {
-      titulo: "Empanadas Con Arroz",
+    titulo: "Empanadas Con Arroz",
     sinArroz: "Con arroz",
     tipo: "Empanadas artesanales rellenas con pollo y carne de buena calidad acompañadas de arroz ",
     clase: "Acompañadas de arroz para una experiencia completa",
