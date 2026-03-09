@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Empanadas</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="empanadas.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,31 +30,32 @@
 
     <div class="registro" onclick="abrirModal()">Ingreso / Registro</div>
 </header>
-  </header>
 
   <main class="layout">
     
     <section class="texto">
-      <h1 id="titulo">Empanadas</h1>
+  <h1 id="titulo">Empanadas</h1>
 
-      <p id="descripcion">
-        <span class="sin-arroz">Sin arroz</span><br>
+  <p id="descripcion">
+    <span id="sinArroz" class="sin-arroz">Sin arroz</span><br>
 
-        <span class="tipo">
-          4 tipos de empanada <br>
-          Elaboradas tradicionalmente con calidad y compromiso<br>
-          elaboradas sin arroz con el fin de que la gente disfrute más la proteína.
-        </span>
+    <span id="tipo" class="tipo">
+      4 tipos de empanada <br>
+      Elaboradas tradicionalmente con calidad y compromiso<br>
+      elaboradas sin arroz con el fin de que la gente disfrute más la proteína.
+    </span>
 
-        <br><br>
+    <br><br>
 
-        <span class="clase">Pollo, Carne, Pollo champiñón, Hawaianas</span>
-      </p>
-    </section>
+    <span id="clase" class="clase">Pollo, Carne, Pollo champiñón, Hawaianas</span>
+  </p>
+</section>
 
-    <section class="imagen">
-      <img src="https://images.cookforyourlife.org/wp-content/uploads/2018/01/Mushroom_empanadas-scaled.jpg" alt="Empanadas">
-    </section>
+<section class="imagen">
+  <img id="imagenEmpanada"
+  src="https://images.cookforyourlife.org/wp-content/uploads/2018/01/Mushroom_empanadas-scaled.jpg"
+  alt="Empanadas">
+</section>
   </main>
   <section class="productos">
   <h2>Nuestros favoritos</h2>
@@ -95,6 +96,8 @@
     <img src="whatsapp.png" alt="WhatsApp">
     <span>CONTACTANOS POR WHATSAPP</span>
   </a>
+  <script src="empanadas.js"></script>
+  
 
 </body>
 </html>
