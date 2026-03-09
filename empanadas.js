@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 const datos = [
     {
     titulo: "Empanadas Con Arroz",
@@ -36,3 +39,4 @@ function cambiarContenido() {
 }
 
 setInterval(cambiarContenido, 4000);
+>>>>>>> fe11ef172c68b859a14722cb70bff8910bf0a280

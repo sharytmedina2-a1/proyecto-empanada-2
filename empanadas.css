@@ -232,3 +232,85 @@ body{
   transform: scale(1.2);
   transition: all 0.5s ease;
 }
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+text-align:center;
+}
+
+header h1{
+margin:20px;
+color:#5f7f1d;
+}
+
+.resultados{
+background:#d7c6a3;
+padding:10px;
+width:60%;
+margin:auto;
+border-radius:8px;
+margin-bottom:30px;
+}
+
+.productos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#e8dfd0;
+padding:15px;
+width:220px;
+border-radius:6px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.precio{
+font-weight:bold;
+font-size:18px;
+margin-bottom:10px;
+}
+
+.contador{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:5px;
+margin-bottom:10px;
+}
+
+.contador button{
+width:30px;
+height:30px;
+border:1px solid #333;
+background:white;
+cursor:pointer;
+}
+
+.carrito{
+background:#9ccc3c;
+border:none;
+padding:8px;
+width:100%;
+border-radius:5px;
+font-weight:bold;
+cursor:pointer;
+}
