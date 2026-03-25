@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Otros Productos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png" alt="logo">
+<h2>Empanadas Delicias</h2>
+</div>
+
+<nav>
+<a href="inicio.html">Inicio</a>
+<a href="empanadas.html">Empanadas</a>
+<a href="otros.html">Otros</a>
+<a href="nosotros.html">Nosotros</a>
+</nav>
+
+</header>
+
+
+<section class="contenedor">
+
+<div class="producto">
+
+<img src="paparellena.jpg" class="img-producto">
+
+<h3>Papa Rellena</h3>
+
+<p>$2000</p>
+
+<div class="cantidad">
+<button onclick="restar('papa')">-</button>
+<span id="papa">0</span>
+<button onclick="sumar('papa')">+</button>
+</div>
+
+<button class="btn" onclick="agregar('Papa Rellena',2000,'papa')">
+Añadir al carrito
+</button>
+
+</div>
+
+
+
+<div class="producto">
+
+<img src="cochinitos.jpg" class="img-producto">
+
+<h3>Cochinitos</h3>
+
+<p>$2000</p>
+
+<div class="cantidad">
+<button onclick="restar('coch')">-</button>
+<span id="coch">0</span>
+<button onclick="sumar('coch')">+</button>
+</div>
+
+<button class="btn" onclick="agregar('Cochinitos',2000,'coch')">
+Añadir al carrito
+</button>
+
+</div>
+
+</section>
+
+
+<section class="carrito">
+
+<h2>Carrito</h2>
+
+<div id="lista"></div>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+</section>
+
+<script src="carrito.js"></script>
+<link rel="stylesheet" href="scrip.js">
+</body>
+</html>

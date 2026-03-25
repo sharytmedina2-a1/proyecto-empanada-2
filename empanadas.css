@@ -53,6 +53,7 @@ body{
   text-decoration: none;
   color: #3b7a04;
   font-weight: 700;
+  border-radius: 3px;
 }
 
 .header-right{
