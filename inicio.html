@@ -1,4 +1,3 @@
-
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -6,10 +5,9 @@
   <title>Empanadas</title>
 
   <link rel="stylesheet" href="empanadas.css" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,33 +30,24 @@
 </header>
 
   <main class="layout">
-    
-    <section class="texto">
-  <h1 id="titulo">Empanadas</h1>
 
-  <p id="descripcion">
-    <span id="sinArroz" class="sin-arroz">Sin arroz</span><br>
+<div id="carrusel" class="carrusel">
+  <div class="texto">
+    <h2 id="titulo"></h2>
+    <p id="descripcion"></p>
+    <p id="clase"></p>
 
-    <span id="tipo" class="tipo">
-      4 tipos de empanada <br>
-      Elaboradas tradicionalmente con calidad y compromiso<br>
-      elaboradas sin arroz con el fin de que la gente disfrute más la proteína.
-    </span>
+  </div>
+  <div class="imagen">
+    <img id="imagen" class="foto" alt="Empanada">
+  </div>
+  
+</div>
 
-    <br><br>
-
-    <span id="clase" class="clase">Pollo, Carne, Pollo champiñón, Hawaianas</span>
-  </p>
-</section>
-
-<section class="imagen">
-  <img id="imagenEmpanada"
-  src="https://images.cookforyourlife.org/wp-content/uploads/2018/01/Mushroom_empanadas-scaled.jpg"
-  alt="Empanadas">
-</section>
   </main>
   <section class="productos">
-  <h2>Nuestros favoritos</h2>
+
+  <div class="favoritos">Nuestras Favoritas</div>
 
   <div class="grid-productos">
     <article class="card">

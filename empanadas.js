@@ -1,38 +1,50 @@
 const datos = [
-    {
-    titulo: "Empanadas Con Arroz",
-    sinArroz: "Con arroz",
-    tipo: "Empanadas artesanales rellenas con pollo y carne de buena calidad acompañadas de arroz ",
-    clase: "Acompañadas de arroz para una experiencia completa",
-    imagen: "img/empanada1.jpg"
-
-    },
-    {
-    titulo: "Otros",
-    sinArroz: "Mas Productos para el deleite",
-    tipo: "Papas rellenas y Cochinos ",
-    clase: "Acompañadas de arroz para una experiencia completa",
-    imagen: "img/empanada2.jpg"
-    }
-]
+  {
+    titulo:"🥟Empanadas sin arroz🥟",
+    descripcion:"Disfruta nuestras empanadas artesanales, preparadas con masa crujiente y rellenos de solo proteína, sin arroz.",
+    clase: "Pollo desmechado, carne sazonada, champiñones, rancheras y hawaianas .",
+    imagen: "https://images.cookforyourlife.org/wp-content/uploads/2018/01/Mushroom_empanadas-scaled.jpg"
+  },
+  {
+    titulo: "Empanadas con arroz",
+    descripcion: "Empanadas artesanales rellenas con pollo y carne acompañadas de arroz",
+    clase: "Pollo, carne, champillon, rancheras, hawuianas",
+    imagen: "https://images.cookforyourlife.org/wp-content/uploads/2018/01/Mushroom_empanadas-scaled.jpg"
+  },
+  {
+    titulo: "Otros productos",
+    descripcion: "Papas rellenas y cochinos para variar tu experiencia",
+    clase: "Pollo, carne, champillon, rancheras, hawuianas",
+    imagen: "https://images.cookforyourlife.org/wp-content/uploads/2018/01/Mushroom_empanadas-scaled.jpg"
+  }
+];
 
 let indice = 0;
 const titulo = document.getElementById("titulo");
-const sinArroz = document.getElementById("sinArroz");
-const tipo = document.getElementById("tipo");
+const descripcion = document.getElementById("descripcion");
 const clase = document.getElementById("clase");
-const imagen = document.getElementById("imagenEmpanada");
+const imagen = document.getElementById("imagen");
 
-function cambiarContenido() {
-    indice++;
-    if (indice >= datos.length) {
-        indice = 0;
-    }
-    titulo.textContent = datos[indice].titulo;
-    sinArroz.textContent = datos[indice].sinArroz;
-    tipo.textContent = datos[indice].tipo;
-    clase.textContent = datos[indice].clase;
-    imagen.src = datos[indice].imagen;
+function mostrarSlide() {
+  const item = datos[indice];
+  
+ 
+  imagen.classList.remove("visible");
+  
+  setTimeout(() => {
+    titulo.textContent = item.titulo;
+    descripcion.textContent = item.descripcion;
+    clase.textContent = item.clase;
+    imagen.src = item.imagen;
+    
+  
+    imagen.classList.add("visible");
+  }, 500);
+
+  indice = (indice + 1) % datos.length;
 }
 
-setInterval(cambiarContenido, 4000);
+
+mostrarSlide();
+
+setInterval(mostrarSlide, 5000);
